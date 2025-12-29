@@ -20,7 +20,7 @@ async function getRecommendation() {
   };
 
   try {
-    const res = await fetch("http://127.0.0.1:8000/recommend", {
+    const res = await fetch("https://career-ai-backend-b9tn.onrender.com/recommend", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
