@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Career AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+  <header>
+    <h1>Career AI</h1>
+    <p>AI-driven career clarity in seconds</p>
+  </header>
+
+  <div class="glass">
+    <div class="section">
+      <h3>Basic Information</h3>
+
+      <div class="grid">
+        <select id="education_type">
+          <option>School</option>
+          <option>College</option>
+        </select>
+
+        <select id="age_group">
+          <option>Under 13</option>
+          <option>13–15</option>
+          <option>16–18</option>
+          <option>19+</option>
+        </select>
+
+        <select id="current_education">
+          <option>9th Grade</option>
+          <option>10th Grade</option>
+          <option>11th Grade</option>
+          <option>12th Grade</option>
+          <option>1st Year College</option>
+          <option>2nd Year College</option>
+          <option>3rd Year College</option>
+          <option>Final Year</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Your Profile</h3>
+      <textarea id="technical_skills" placeholder="Technical skills"></textarea>
+      <textarea id="soft_skills" placeholder="Soft skills"></textarea>
+      <textarea id="hobbies" placeholder="Hobbies & interests"></textarea>
+    </div>
+
+    <div class="section">
+      <h3>Career Preferences</h3>
+
+      <select id="industry">
+        <option>Technology</option>
+        <option>Healthcare</option>
+        <option>Finance</option>
+        <option>Education</option>
+        <option>Creative</option>
+        <option>Government</option>
+      </select>
+
+      <textarea id="expectation" placeholder="Salary, work-life balance, remote, etc."></textarea>
+    </div>
+
+    <button id="submitBtn" onclick="getRecommendation()">
+      Generate Career Path →
+    </button>
+  </div>
+
+  <div class="result hidden" id="resultCard">
+    <h2>AI Recommendation</h2>
+    <pre id="output"></pre>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
